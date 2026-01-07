@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon Icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streamline Automations | Next-Gen AI Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      @media (max-width: 768px) {
+        #VG_OVERLAY_CONTAINER .vg-widget-trigger {
+          transform: scale(0.7);
+          right: 16px !important;
+          bottom: 16px !important;
+        }
+        #VG_OVERLAY_CONTAINER .vg-widget-iframe {
+          right: 16px !important;
+          bottom: 90px !important;
+          width: calc(100% - 32px) !important;
+          max-width: 340px !important;
+        }
+      }
+      
+      @media (min-width: 769px) {
+        #VG_OVERLAY_CONTAINER .vg-widget-trigger {
+          right: 24px !important;
+          bottom: 24px !important;
+        }
+        #VG_OVERLAY_CONTAINER .vg-widget-iframe {
+          right: 24px !important;
+          bottom: 100px !important;
+        }
+      }
+      
+      /* Add delay for initial chat message */
+      #VG_OVERLAY_CONTAINER .vg-widget-iframe {
+        animation: fadeInDelayed 0.3s ease-in-out 2s both;
+      }
+      
+      @keyframes fadeInDelayed {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-dark-950 to-dark-900 text-white">
+    <div id="root"></div>
+    <div id="VG_OVERLAY_CONTAINER"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      (function() {
+          window.VG_CONFIG = {
+              ID: "mkMfvjg7bF8dGjaTyhnJ",
+              region: 'na',
+              render: 'bottom-right',
+              stylesheets: [
+                  "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css"
+              ]
+          }
+          var VG_SCRIPT = document.createElement("script");
+          VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+          VG_SCRIPT.defer = true;
+          document.body.appendChild(VG_SCRIPT);
+      })()
+    </script>
+  </body>
+</html>
